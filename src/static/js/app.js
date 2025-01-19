@@ -1,6 +1,10 @@
 function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
+        <React.Fragment>
+        <header>
+            <h1 className="text-center mt-4">ToDo App by Yoshiki Takebayashi</h1>
+        </header>
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
@@ -8,6 +12,7 @@ function App() {
                 </Col>
             </Row>
         </Container>
+        </React.Fragment>
     );
 }
 
