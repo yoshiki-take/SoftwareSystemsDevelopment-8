@@ -16,4 +16,4 @@ jobs:
       - name: Set SQLite DB location
         env:
           SQLITE_DB_LOCATION: /tmp/todo.db
-
+        run: echo "SQLite DB location is set to $SQLITE_DB_LOCATION"
