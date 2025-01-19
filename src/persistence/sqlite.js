@@ -15,7 +15,7 @@ function init() {
             if (err) return rej(err);
 
             if (process.env.NODE_ENV !== 'test')
-                console.log(Using sqlite database at ${location});
+                console.log(`Using sqlite database at ${location}`);
 
             db.run(
                 'CREATE TABLE IF NOT EXISTS todo_items (id varchar(36), name varchar(255), completed boolean)',
