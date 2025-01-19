@@ -11,13 +11,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      
       - name: Install dependencies
         run: npm install
-      
       - name: Run unit tests
-        run: npm test
-      
+        run: npm test      
       - name: Set SQLite DB location
         env:
           SQLITE_DB_LOCATION: /tmp/todo.db
